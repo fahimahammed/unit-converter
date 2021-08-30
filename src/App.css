@@ -1,0 +1,18 @@
+.app-title{
+    text-align: center;
+}
+.button-style{
+    cursor: pointer;
+    padding: 3px;
+}
+
+.button-style:hover{
+    background-color: green;
+    font-weight: 700;
+    color: white;
+}
+
+.nav-btn:hover{
+    background-color: white;
+    color: green;
+}
