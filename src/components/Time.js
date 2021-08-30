@@ -9,6 +9,7 @@ const Time = () => {
 
     // convert value 
     const converter = (input) =>{
+        // for input second
         if(buttonDefValue1 === 'Second'){
             if(buttonDefValue2 === 'Second'){
                 const result = input * 1;
@@ -20,7 +21,9 @@ const Time = () => {
                 const result = input / 3600;
                 setValue(result);
             }
-        }else if(buttonDefValue1 === 'Minute'){
+        }
+        // for input minute
+        else if(buttonDefValue1 === 'Minute'){
             if(buttonDefValue2 === 'Second'){
                 const result = input * 60;
                 setValue(result);
@@ -31,7 +34,9 @@ const Time = () => {
                 const result = input / 60;
                 setValue(result);
             }
-        }else if(buttonDefValue1 === 'Hour'){
+        }
+        // for input hour
+        else if(buttonDefValue1 === 'Hour'){
             if(buttonDefValue2 === 'Second'){
                 const result = input * 3600;
                 setValue(result);
