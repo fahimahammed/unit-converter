@@ -9,6 +9,7 @@ const Temperature = () => {
 
     // convert value 
     const converter = (input) =>{
+        // for input celsius
         if(buttonDefValue1 === 'Celsius'){
             if(buttonDefValue2 === 'Celsius'){
                 const result = input * 1;
@@ -20,7 +21,9 @@ const Temperature = () => {
                 const result = (1.8 * input) + 32;
                 setValue(result);
             }
-        }else if(buttonDefValue1 === 'Kelvin'){
+        }
+        //for input kelvin
+        else if(buttonDefValue1 === 'Kelvin'){
             if(buttonDefValue2 === 'Celsius'){
                 const result = input - 273.15;
                 setValue(result);
@@ -31,7 +34,9 @@ const Temperature = () => {
                 const result = (input - 273.15) * 1.8 + 32;
                 setValue(result);
             }
-        }else if(buttonDefValue1 === 'Fahrenheit'){
+        }
+        // for input fahrenheit
+        else if(buttonDefValue1 === 'Fahrenheit'){
             if(buttonDefValue2 === 'Celsius'){
                 const result = 0.56 * (input-32) ;
                 setValue(result);
