@@ -9,6 +9,7 @@ const Length = () => {
 
     // convert value 
     const converter = (input) =>{
+        // for input meter
         if(buttonDefValue1 === 'Meter'){
             if(buttonDefValue2 === 'Meter'){
                 const result = input * 1;
@@ -24,6 +25,7 @@ const Length = () => {
                 setValue(result);
             }
         }
+        // for input kilometer
         else if(buttonDefValue1 === 'Kilometer'){
             if(buttonDefValue2 === 'Meter'){
                 const result = input * 1000;
@@ -39,6 +41,7 @@ const Length = () => {
                 setValue(result);
             }
         }
+        // for input centimeter
         else if(buttonDefValue1 === 'Centimeter'){
             if(buttonDefValue2 === 'Meter'){
                 const result = input * 0.01;
@@ -53,6 +56,8 @@ const Length = () => {
                 const result = input * 10;
                 setValue(result);
             }
+
+            // for input milimeter
             else if(buttonDefValue1 === 'Milimeter'){
                 if(buttonDefValue2 === 'Meter'){
                     const result = input * 0.001;
