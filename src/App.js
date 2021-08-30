@@ -3,8 +3,7 @@ import Length from './components/Length';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import Temperature from './components/Temperature';
 import Time from './components/Time';
