@@ -2,6 +2,12 @@
 
 ### Technology: Reactjs, JavaScript, Bootstrap, HTML, CSS
 
+### Installation Guide
+
+```bash
+yarn add
+```
+
 <a href='https://converter1.netlify.app/'><h5>Live Site</h5></a>
 
 <hr>
